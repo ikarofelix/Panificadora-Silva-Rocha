@@ -1,0 +1,21 @@
+@import "../../index.scss";
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 1.5em;
+
+  box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.modal-light {
+  background: var(--brown-light);
+}
+
+.modal-dark {
+  background: var(--brown-dark);
+}

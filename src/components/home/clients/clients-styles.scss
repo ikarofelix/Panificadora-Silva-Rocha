@@ -1,0 +1,14 @@
+.clients-section-container {
+  padding-bottom: 70px;
+
+  .clients-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .client-icon {
+      height: 100px;
+    }
+  }
+}
