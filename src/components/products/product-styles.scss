@@ -1,0 +1,56 @@
+.products-route {
+  margin: 100px auto;
+  width: min(1920px, 100vw);
+
+  .products-items-container {
+    margin-bottom: 100px;
+
+    .products-items {
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      width: 80%;
+
+      .product-item {
+        width: max(20%, 330px);
+
+        .modal-product {
+          display: flex;
+          justify-content: center;
+          padding: 0;
+          height: 330px;
+
+          .product-title {
+            font-family: "Braah One", sans-serif;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            height: 20%;
+            padding: 0 20px;
+            color: var(--yellow-color);
+          }
+
+          .product-description {
+            font-size: 16px;
+            height: 30%;
+            padding: 0 20px;
+            border-top: 1px solid var(--text-color);
+            color: var(--text-color);
+          }
+
+          .product-image-container {
+            height: 35%;
+
+            .product-image {
+              height: 100%;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

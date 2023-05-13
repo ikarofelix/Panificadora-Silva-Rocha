@@ -42,6 +42,15 @@
 
       .footer-category-text {
         color: var(--text-color);
+
+        .footer-link {
+          margin-bottom: 15px;
+
+          a {
+            text-decoration: none;
+            color: var(--text-color);
+          }
+        }
       }
     }
   }

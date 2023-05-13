@@ -6,7 +6,7 @@ export const MainImgHomePage = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    ariaLabel="Mulher segurando um pão"
+    aria-label="Mulher segurando um pão"
   >
     <g filter="url(#filter0_d_4_62)">
       <path
