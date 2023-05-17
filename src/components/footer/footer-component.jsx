@@ -4,7 +4,7 @@ const FooterCategories = [
   {
     id: 1,
     title: "EMPRESA TOP OF MIND 2005/2006",
-    image: "./src/assets/footer/certificate-image.jpg",
+    image: "../../assets/footer/certificate-image.jpg",
     alt: "Certificado Top Of Mind Brazil - 2005/2006",
     href: "https://www.inbrap.com/premios",
   },
