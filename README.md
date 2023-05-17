@@ -1,6 +1,6 @@
 # Panificadora Silva Rocha
 
-![image](https://github.com/ikarofelix/Panificadora-Silva-Rocha/assets/117465215/8c704889-8fd9-4d96-be72-a310a96c7f64)
+![Screenshot_2](https://github.com/ikarofelix/Panificadora-Silva-Rocha/assets/117465215/0fc8b7f1-d2aa-49bb-ad06-5faaa1f4d328)
 
 # PORTUGUÊS
 
