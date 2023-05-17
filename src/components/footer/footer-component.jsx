@@ -1,10 +1,11 @@
 import "./footer-styles.scss";
+import Certificate from "../../assets/footer/certificate-image.jpg";
 
 const FooterCategories = [
   {
     id: 1,
     title: "EMPRESA TOP OF MIND 2005/2006",
-    image: "./src/assets/footer/certificate-image.jpg",
+    image: Certificate,
     alt: "Certificado Top Of Mind Brazil - 2005/2006",
     href: "https://www.inbrap.com/premios",
   },

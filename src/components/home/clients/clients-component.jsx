@@ -1,25 +1,29 @@
 import "./clients-styles.scss";
 import { Modal, ModalTypes } from "../../modal/modal-component";
+import SaoGoncalo from "../../../assets/home-page/sao-goncalo-company.png";
+import PorteiraVelha from "../../../assets/home-page/porteira-velha-company.png";
+import Sodexo from "../../../assets/home-page/sodexo-company.png";
+import GRSA from "../../../assets/home-page/grsa-company.png";
 
 const Clients = [
   {
     id: 1,
-    src: "./src/assets/home-page/sao-goncalo-company.png",
+    src: SaoGoncalo,
     alt: "Logo Empresa São Gonçalo",
   },
   {
     id: 2,
-    src: "./src/assets/home-page/porteira-velha-company.png",
+    src: PorteiraVelha,
     alt: "Logo Empresa Porteira Velha",
   },
   {
     id: 3,
-    src: "./src/assets/home-page/sodexo-company.png",
+    src: Sodexo,
     alt: "Logo Empresa Sodexo",
   },
   {
     id: 4,
-    src: "./src/assets/home-page/grsa-company.png",
+    src: GRSA,
     alt: "Logo Empresa GRSA",
   },
 ];

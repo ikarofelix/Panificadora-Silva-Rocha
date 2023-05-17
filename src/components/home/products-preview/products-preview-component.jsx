@@ -1,18 +1,20 @@
 import "./products-preview-styles.scss";
 import { Modal, ModalTypes } from "../../modal/modal-component";
 import { ButtonComponent } from "../../button/button-component";
+import ProductsUnityPreview from "../../../assets/home-page/products-unity-image.jpg";
+import ProductsQuantityPreview from "../../../assets/home-page/products-quantity-image.jpg";
 
 const ProductsGroup = [
   {
     id: 1,
     title: "UNIDADES",
-    src: "./src/assets/home-page/products-unity-image.jpg",
+    src: ProductsUnityPreview,
     alt: "Pães de sal em uma caixa",
   },
   {
     id: 2,
     title: "EMBALADOS",
-    src: "./src/assets/home-page/products-quantity-image.jpg",
+    src: ProductsQuantityPreview,
     alt: "Pães de forma embalados dentro de uma caixa",
   },
 ];
