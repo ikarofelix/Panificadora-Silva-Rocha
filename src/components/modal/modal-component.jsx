@@ -5,6 +5,10 @@ export const ModalTypes = {
   MODAL_DARK: "modal-dark",
 };
 
-export const Modal = ({ modalType, className, children }) => {
-  return <div className={`modal ${modalType} ${className}`}>{children}</div>;
+export const Modal = ({ modalType, className, children, ...otherProps }) => {
+  return (
+    <div {...otherProps} className={`modal ${modalType} ${className}`}>
+      {children}
+    </div>
+  );
 };

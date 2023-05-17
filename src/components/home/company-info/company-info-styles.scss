@@ -1,3 +1,5 @@
+@import "../../../index.scss";
+
 .company-info-container {
   display: flex;
   justify-content: center;
@@ -22,13 +24,13 @@
       display: flex;
       align-items: center;
       height: 30%;
-      color: var(--white-color);
+      color: $white-color;
     }
 
     .company-info-text {
       font-size: 15px;
       height: 40%;
-      color: var(--text-color);
+      color: $text-color;
     }
   }
 }

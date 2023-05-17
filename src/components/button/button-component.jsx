@@ -1,7 +1,7 @@
 import "./button-styles.scss";
 
-export const ButtonComponent = ({ children }) => (
-  <a href="https://google.com" className="button">
+export const ButtonComponent = ({ children, ...otherProps }) => (
+  <a {...otherProps} className="button">
     {children}
   </a>
 );

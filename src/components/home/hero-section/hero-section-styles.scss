@@ -1,4 +1,6 @@
-.main-section {
+@import "../../../index.scss";
+
+.hero-section {
   margin: 70px auto;
   display: flex;
   align-items: center;
@@ -6,40 +8,40 @@
 
   width: fit-content;
 
-  .main-img {
+  .hero-img {
     width: 50%;
     align-self: center;
     height: max(100%, 1300px);
   }
 
-  .main-info {
+  .hero-info {
     display: flex;
     flex-direction: column;
     width: min(50%, 700px);
     margin: 150px 0;
 
-    .main-line-vector {
+    .hero-line-vector {
       height: 5px;
       width: 30%;
-      background: var(--yellow-color);
+      background: $yellow-color;
       border-radius: 20px;
     }
 
-    .main-title {
-      color: var(--yellow-color);
+    .hero-title {
+      color: $yellow-color;
       font-size: 64px;
       line-height: 60px;
       margin: 0;
 
-      .main-subtitle {
+      .hero-subtitle {
         display: block;
-        color: var(--white-color);
+        color: $white-color;
       }
     }
 
-    .main-text {
+    .hero-text {
       font-size: 20px;
-      color: var(--text-color);
+      color: $text-color;
       margin-bottom: 50px;
       width: 90%;
       height: fit-content;

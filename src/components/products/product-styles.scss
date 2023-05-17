@@ -1,9 +1,11 @@
+@import "../../index.scss";
+
 .products-route {
-  margin: 100px auto;
+  margin: auto;
   width: min(1920px, 100vw);
 
   .products-items-container {
-    margin-bottom: 100px;
+    padding: 100px 0;
 
     .products-items {
       margin: auto;
@@ -11,7 +13,7 @@
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 50px;
+      gap: 2em;
       width: 80%;
 
       .product-item {
@@ -30,15 +32,15 @@
             align-items: center;
             height: 20%;
             padding: 0 20px;
-            color: var(--yellow-color);
+            color: $yellow-color;
           }
 
           .product-description {
             font-size: 16px;
             height: 30%;
             padding: 0 20px;
-            border-top: 1px solid var(--text-color);
-            color: var(--text-color);
+            border-top: 1px solid $text-color;
+            color: $text-color;
           }
 
           .product-image-container {

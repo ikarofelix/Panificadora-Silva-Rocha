@@ -1,5 +1,7 @@
+@import "../../index.scss";
+
 .about-route {
-  margin: 100px auto;
+  margin: 10vh auto;
   width: min(1920px, 100vw);
 
   .about-container {
@@ -18,11 +20,11 @@
       .about-text {
         font-size: 18px;
         text-align: initial;
-        color: var(--white-color);
+        color: $white-color;
 
         a {
           text-decoration: none;
-          color: var(--yellow-color);
+          color: $yellow-color;
         }
       }
     }

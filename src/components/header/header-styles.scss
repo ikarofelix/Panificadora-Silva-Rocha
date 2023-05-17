@@ -5,7 +5,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  background: var(--white-color);
+  background: $white-color;
   border-radius: 0 0 8px 8px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   z-index: 99;
@@ -29,7 +29,7 @@
         display: flex;
         align-items: center;
         height: 100%;
-        color: var(--yellow-color);
+        color: $yellow-color;
       }
 
       .menu-icon {
@@ -49,12 +49,12 @@
         font-family: "Darumadrop One", cursive;
         font-size: 18px;
         text-decoration: none;
-        color: var(--navbar-text-color);
+        color: $navbar-text-color;
       }
 
       .current-page {
         text-decoration: underline;
-        color: var(--clickable-brown);
+        color: $clickable-brown;
       }
 
       .media-icons {

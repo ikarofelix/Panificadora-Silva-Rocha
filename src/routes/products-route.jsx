@@ -1,4 +1,5 @@
 import { ProductComponent } from "../components/products/product-component";
+import { useEffect } from "react";
 
 const UnityItems = [
   {
@@ -135,9 +136,17 @@ const PackagedItems = [
 ];
 
 export const Products = () => {
+  useEffect(() => {
+    const { hash } = window.location;
+    if (hash) {
+      const element = document.getElementById(hash.slice(1));
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <div className="products-route">
-      <div className="products-items-container">
+      <div id="unidades" className="products-items-container">
         <h1 className="section-title">Produtos unitários</h1>
         <div className="products-items">
           {UnityItems.map((item) => (
@@ -145,7 +154,7 @@ export const Products = () => {
           ))}
         </div>
       </div>
-      <div className="products-items-container">
+      <div id="embalados" className="products-items-container">
         <h1 className="section-title">Produtos embalados</h1>
         <div className="products-items">
           {PackagedItems.map((item) => (

@@ -1,0 +1,101 @@
+@import "../../../index.scss";
+
+.contact-route {
+  width: min(1920px, 100vw);
+  margin: 10vh auto;
+
+  .contact-form {
+    width: min(1400px, 90%);
+    margin: auto;
+    height: 100%;
+
+    .form-warning {
+      font-size: 0.7em;
+      position: relative;
+      top: 25px;
+      left: 10px;
+      color: white;
+    }
+
+    form {
+      width: 100%;
+
+      .contact-info {
+        position: relative;
+        width: 100%;
+        margin: 35px 0;
+      }
+
+      .submit-contact {
+        height: 80px;
+
+        .button {
+          padding: 1.5em 5em;
+        }
+      }
+    }
+  }
+}
+
+.contact-form {
+  label {
+    position: absolute;
+    font-size: 1.1rem;
+    left: 4.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    color: $white-color;
+    transition: 0.1s ease-out;
+  }
+
+  input,
+  textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    outline: none;
+    width: 90%;
+    position: relative;
+    border: 0;
+    border-radius: 5px;
+    padding: 1rem 0.7rem;
+    color: $white-color;
+    background: $brown-dark;
+    transition: all 0.2s ease-out;
+  }
+
+  textarea {
+    resize: none;
+
+    ~ label {
+      top: 15%;
+    }
+  }
+
+  input:focus,
+  textarea:focus {
+    box-shadow: 0px 0px 5px $yellow-color inset;
+  }
+
+  input:focus + label,
+  textarea:focus + label {
+    color: $yellow-color;
+    top: 0px;
+    transform: translateY(-90%) scale(0.9);
+  }
+
+  input:invalid {
+    box-shadow: 0px 0px 5px red inset;
+
+    + label {
+      color: red;
+    }
+  }
+
+  input:not(:placeholder-shown) + label,
+  textarea:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-90%) scale(0.9);
+  }
+}

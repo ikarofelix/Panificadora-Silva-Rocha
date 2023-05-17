@@ -8,6 +8,8 @@ import { MenuIconFilled } from "../../assets/navbar/menu-icon-filled";
 import { useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 
+import { useEffect } from "react";
+
 const NavLinks = [
   {
     id: 1,
@@ -40,13 +42,25 @@ export const Header = () => {
   const [menuBar, setMenuBar] = useState(false);
   const { pathname } = useLocation();
 
+  const setPageTitle = (title) => {
+    title === "Home"
+      ? (document.title = "Panificadora Silva Rocha")
+      : (document.title = title + " - Panificadora Silva Rocha");
+  };
+
+  useEffect(() => {
+    NavLinks.map((link) => {
+      link.pathname === pathname ? setPageTitle(link.title) : null;
+    });
+  });
+
   return (
     <>
       <header className={menuBar ? "active header" : "header"}>
         <nav className="navbar">
           <div className="menu-container">
             <a className="logo" href="/">
-              <h1>LOGO</h1>
+              <img width={"64px"} height={"64px"} src="/logo.svg" alt="" />
             </a>
             <a onClick={() => setMenuBar(!menuBar)} className="menu-icon">
               {menuBar ? <MenuIconFilled /> : <MenuIcon />}

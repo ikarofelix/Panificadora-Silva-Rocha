@@ -30,7 +30,9 @@ export const ProductsPreviewComponent = () => (
           <Modal modalType={ModalTypes.MODAL_LIGHT} className="product-modal">
             <img className="product-image" loading="lazy" src={product.src} alt={product.alt} />
           </Modal>
-          <ButtonComponent>{product.title}</ButtonComponent>
+          <ButtonComponent href={`/products#${product.title.toLowerCase()}`}>
+            {product.title}
+          </ButtonComponent>
         </Modal>
       ))}
     </div>
