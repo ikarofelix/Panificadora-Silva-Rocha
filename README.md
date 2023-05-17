@@ -73,3 +73,7 @@ The main language of this project is Brazilian Portuguese, but the whole codebas
 - Context API
 - Figma
 - Netlify
+
+---
+# License
+MIT License
